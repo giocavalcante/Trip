@@ -611,3 +611,96 @@ footer.section {
   }
 }
 /* medium devices: 767 > */
+
+
+/* ==== GitHub Pages / responsive fixes ==== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#header img {
+  width: clamp(5.5rem, 10vw, 8rem);
+}
+
+#home img {
+  width: 100%;
+  max-width: 68.75rem;
+  height: auto;
+  min-height: 18rem;
+  left: auto;
+  margin-right: 0;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.swiper-slide {
+  left: auto;
+  width: 100% !important;
+  padding: 0;
+}
+
+.swiper-slide a,
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.campo input[type='text'],
+.campo input[type='email'],
+.campo textarea {
+  width: 100% !important;
+  max-width: 506px;
+}
+
+#contact form {
+  min-width: 0;
+}
+
+@media (max-width: 1199px) {
+  main {
+    margin-top: var(--header-height);
+  }
+
+  #home {
+    padding-top: 0;
+  }
+
+  #home img {
+    min-height: 12rem;
+  }
+
+  #about .image img {
+    width: min(100%, 32rem);
+  }
+
+  #contact .container {
+    grid-auto-flow: row;
+  }
+
+  .logo-footer {
+    margin: 0 0 1.5rem;
+    left: auto;
+    width: min(10rem, 40vw);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #home img {
+    min-height: 10rem;
+  }
+
+  #contact .text h2 {
+    font-size: 1.5rem;
+  }
+}

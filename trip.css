@@ -255,3 +255,125 @@ footer .social a:hover {
 
 
 
+
+
+/* ==== Responsive polish for package page ==== */
+.origem,
+.total,
+.rules,
+.text {
+  width: auto;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.origem {
+  gap: 1rem;
+  align-items: end;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.citie,
+.people {
+  min-width: 0;
+}
+
+.form-citie {
+  margin-left: 1rem;
+  width: min(54.6rem, 70vw);
+  max-width: 100%;
+}
+
+.people2 {
+  height: 2.5rem;
+}
+
+.price {
+  margin-left: .75rem;
+  margin-top: 0;
+  height: 2.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rules {
+  margin-top: 1rem;
+  height: auto;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.rules .cards {
+  flex: 1;
+}
+
+.divider-3 {
+  height: auto;
+}
+
+.text {
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .origem {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .citie,
+  .people {
+    display: grid;
+    gap: .5rem;
+  }
+
+  .form-citie,
+  .people2,
+  .price,
+  .acompanhantes {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .price {
+    margin-top: .25rem;
+  }
+
+  .total {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rules {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+  }
+
+  .divider-3 {
+    width: 100%;
+    border-right: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+}

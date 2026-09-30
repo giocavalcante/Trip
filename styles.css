@@ -704,3 +704,158 @@ img {
     font-size: 1.5rem;
   }
 }
+
+
+/* ==== Visual polish ==== */
+body {
+  line-height: 1.6;
+}
+
+#header {
+  margin-bottom: 0;
+}
+
+#header nav {
+  min-height: var(--header-height);
+}
+
+#header img {
+  display: block;
+  object-fit: contain;
+}
+
+#home {
+  padding: 1.5rem 0 0;
+}
+
+#home .swiper {
+  max-width: 1120px;
+  border-radius: 0.75rem;
+}
+
+#home .swiper-slide img {
+  aspect-ratio: 16 / 6;
+  object-fit: cover;
+}
+
+#about .container {
+  gap: 3rem;
+}
+
+#about .image {
+  justify-content: center;
+}
+
+#about .image img {
+  max-width: 24rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+#about .text {
+  max-width: 38rem;
+}
+
+#about .text p {
+  line-height: 1.75;
+}
+
+#contact {
+  background: #f7fbfc;
+}
+
+#contact .container {
+  gap: 3rem;
+}
+
+#contact .text h2 {
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+#contact form {
+  width: 100%;
+  max-width: 34rem;
+}
+
+.campo input[type='text'],
+.campo input[type='email'],
+.campo textarea {
+  font: 400 1rem var(--body-font);
+  border: 1px solid #d8d8d8;
+  border-radius: 0.5rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.campo textarea {
+  min-height: 8rem;
+  padding: 1rem;
+  resize: vertical;
+}
+
+.campo input[type='text']:focus,
+.campo input[type='email']:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--base-color);
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, .12);
+}
+
+#contact .button,
+#contact button.button {
+  border: 0;
+  cursor: pointer;
+}
+
+footer .logo-footer {
+  width: 8.5rem;
+  margin: 0 0 1rem;
+}
+
+footer .social {
+  gap: 1rem;
+  margin: .5rem 0 1rem !important;
+}
+
+footer .social img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  #home {
+    padding-top: .75rem;
+  }
+
+  #home .swiper {
+    border-radius: 0;
+  }
+
+  #home .swiper-slide img {
+    aspect-ratio: 16 / 9;
+  }
+
+  #about .container,
+  #contact .container {
+    gap: 2rem;
+  }
+
+  #about .text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #contact form,
+  #contact .text {
+    max-width: none;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
